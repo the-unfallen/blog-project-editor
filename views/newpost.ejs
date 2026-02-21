@@ -1,0 +1,35 @@
+<!-- // views/posts.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style1.css">
+    <script type="module" src="/js/newpost.js" defer></script>
+
+</head>
+<body>
+    <div id="all">
+        <div id="header-section"></div>
+        <div class="page-title">
+            <h1>New Post.</h1>
+        </div>
+        <div id="new-post-container">
+            <form id="new-post-form">
+                <div class="new-post-form-title">
+                    <label for="post-title">Title:</label>
+                    <input type="text" id="post-title" name="title" required>
+                </div>
+                <div class="new-post-form-content">
+                    <label for="post-content">Content:</label>
+                    <textarea id="post-content" name="content" rows="10" cols="50" required></textarea>
+                </div>
+                <div>
+                    <button type="submit">Add Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- // views/posts.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/css/style1.css">
+    <script type="module" src="/js/editPost.js" defer></script>
+
+</head>
+<body>
+    <div id="all">
+        <div id="header-section"></div>
+        <div class="page-title">
+            <h1>Edit this Post.</h1>
+        </div>
+        <div id="edit-post-container">
+            <form id="edit-post-form">
+                <div id="edit-post-author"></div>
+                <div class="edit-post-form-title">
+                    <label for="edit-post-title">Title:</label>
+                    <input type="text" id="edit-post-title" name="title" required>
+                </div>
+
+                <div class="edit-post-form-content">
+                    <label for="post-content">Content:</label>
+                    <textarea id="edit-post-content" name="content" rows="10" cols="50" required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit"> Submit Post</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,290 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+    margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    /* 4. Add accessible line-height */
+    line-height: 1.5;
+    /* 5. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+
+body {
+    background: yellow;
+}
+
+#login-form-container, #sign-up-form-container {
+    width: 100%;
+    padding: 24px;
+}
+
+.post-item-box {
+    border: 2px solid black;
+    margin: 12px;
+    padding: 12px;
+}
+
+.post-item-title {
+    font-weight: 700;
+}
+
+.comment-item {
+    border: 1px solid black;
+    margin: 6px;
+    padding: 6px;
+}
+
+#view-post-container {
+    margin: 20px;
+    padding: 24px;
+    border: 4px solid black;
+}
+
+#new-post-container,
+#edit-post-container {
+    margin: 20px;
+    padding: 12px;
+    border: 4px solid black;
+}
+
+.publish-status,
+.author-status {
+    background: white;
+    padding: 8px;
+}
+
+#header-section nav {
+    padding: 12px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+body a,
+body a:visited {
+    color: blue;
+}
+
+.page-title {
+    width: 100%;
+    padding-left: 32px;
+}
+
+.post-item-view {
+    font-size: 1.5rem;
+}
+
+
+.unit-post-content-header {
+    font-weight: bold;
+    margin-top: 12px;
+
+}
+
+.unit-post-content-body {
+    margin: 12px 32px 12px 32px;
+    text-align: justify;
+    padding: 8px;
+
+}
+
+.unit-post-createdAt {
+    margin-bottom: 24px;
+}
+
+.unit-post-action-blocks {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 32px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 12px;
+
+}
+
+.unit-post-comment-block {
+    margin-top: 24px;
+}
+
+.unit-post-new-comment-div {
+    padding: 12px;
+}
+
+#new-comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#new-comment-form>div {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#new-comment-form>div textarea {
+    width: 640px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.unit-post-edit {
+    font-size: 1.5rem;
+}
+
+.unit-post-comment-block {
+    padding: 12px;
+}
+
+.post-item-comments {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#new-post-form {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.new-post-form-title,
+.new-post-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.new-post-form-content textarea {
+    border: 4px solid black;
+    border-radius: 8px;
+    width: 720px;
+    padding: 8px;
+}
+
+.new-post-form-title input {
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 720px;
+    padding: 8px;
+}
+
+#new-post-form button {
+    width: 120px;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+#edit-post-form {
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.edit-post-form-title, .edit-post-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.edit-post-form-title input {
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 720px;
+    padding: 8px;
+}
+
+.edit-post-form-content textarea {
+    border: 4px solid black;
+    border-radius: 8px;
+    width: 720px;
+    padding: 8px;
+}
+
+#edit-post-form button {
+    border: 2px solid black;
+    border-radius: 8px;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 300px;
+}
